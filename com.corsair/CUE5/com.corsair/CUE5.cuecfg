@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<map name="AssignmentPanels">
+		<value name="InfoPopupVisible">false</value>
+	</map>
+	<map name="Backup">
+		<value name="Version">5.29.103</value>
+	</map>
+	<map name="CommonSettings">
+		<value name="DemoDeviceModeEnabled">false</value>
+		<value name="StartOnStartup">true</value>
+	</map>
+	<map name="DataCollectionSettings">
+		<value name="configuration_loaded_date">2025-06-26T23:09:44.181</value>
+		<value name="dataConsent">true</value>
+		<map name="hwProfilesHashes">
+			<map name="{42edc227-a73a-4d1b-89ff-057b002e3883}">
+				<value name="{fe7a6f02-7c4e-4a90-bd56-a53b826af8a6}">9461082eecf54ec32245fcda2e567506</value>
+			</map>
+		</map>
+		<value name="iCueSettingsEventHash">983ac624227206247cd462d795e14d02</value>
+		<value name="iCueSettingsEventSent">false</value>
+		<value name="inited">true</value>
+		<value name="initialProfilesSent">true</value>
+		<value name="machine_id">5240369a050f242f5df952f3a0d4e40a</value>
+		<value name="needToSendSystemSensorsInfo">false</value>
+		<value name="session_ended">false</value>
+	</map>
+	<map name="Devices">
+		<map name="K55 CORE RGB Gray">
+			<map name="{42edc227-a73a-4d1b-89ff-057b002e3883}">
+				<value name="BodyColor">0</value>
+				<value name="BrightnessLevel">100</value>
+				<value name="FirstDetected">2024-12-04T20:01:45.401Z</value>
+				<value name="Layout">4</value>
+				<binary name="LedChannelCounts">%00%01%00%00%00%00%00%00%0BQList%3Cint%3E%00%00%00%00%00</binary>
+				<binary name="LedChannelExtensionsTypes">%00%01%00%00%00%00%00%001QList%3CQList%3Ccue%3A%3Adev%3A%3Amanifest%3A%3ALedChannelType%3E%3E%00%00%00%00%01%00%00%00%00</binary>
+				<binary name="LedChannelSynchronizations">%00%01%00%00%00%00%00%00%0CQList%3Cbool%3E%00%00%00%00%00</binary>
+				<binary name="LedChannelTypeCombinations">%00%01%00%00%00%00%00%001QList%3CQList%3Ccue%3A%3Adev%3A%3Amanifest%3A%3ALedChannelType%3E%3E%00%00%00%00%00</binary>
+				<binary name="LedChannelTypes">%00%01%00%00%00%00%00%00%2AQList%3Ccue%3A%3Adev%3A%3Amanifest%3A%3ALedChannelType%3E%00%00%00%00%01%00%00%00%0CNotConnected</binary>
+				<value name="LightingMode">Software</value>
+				<value name="UniqueDeviceId">{fdc2476f-4b70-48e3-8db4-63c036515e87}</value>
+			</map>
+		</map>
+		<binary name="UniqueDeviceIds">%00%01%00%00%00%00%00%003QHash%3CQUuid%2Ccue_settings%3A%3Atypes%3A%3AUniqueDeviceData%3E%00%00%00%00%01B%ED%C2%27%A7%3AM%1B%89%FF%05%7B%00.8%83%00%00%1B%1C%00%00%2B%05%00%00%00%40%00A%00D%000%000%000%000%000%000%001%009%000%000%007%003%000%000%000%005%00A%008%009%005%001%000%00D%00F%00B%000%000%000%000%000%FF%FF%FF%FF</binary>
+	</map>
+	<value name="Language">en</value>
+	<value name="LastDataCollectionConsentAppVersion">5.21.107</value>
+	<map name="LastDir">
+		<value name="ProfileProgramLink">/Applications</value>
+		<value name="RunProgramByShortcut">file:///Applications/Vienna Ensemble Pro</value>
+	</map>
+	<value name="LastLoadedAppVersion">5.29.103</value>
+	<map name="LightingLibraryStorage">
+		<value name="version">401</value>
+	</map>
+	<map name="Lightings">
+		<map name="Instant">
+			<value name="Enabled">false</value>
+		</map>
+	</map>
+	<map name="Privacy">
+		<value name="DataCollectionConsent">false</value>
+		<value name="DataCollectionConsentTimestamp">04 Dec 2024 21:01:39 +0100</value>
+	</map>
+	<map name="Storage Locations">
+		<value name="-Users-alexanderfortunato-Library-Application Support-Corsair-CUE5-eq_presets-limitedequalizerpresets.cuelibrary">true</value>
+		<value name="-Users-alexanderfortunato-Library-Application Support-Corsair-CUE5-eq_presets-unlimitedequalizerpresets.cuelibrary">true</value>
+		<value name="-Users-alexanderfortunato-Library-Application Support-Corsair-CUE5-eq_presets-unlimitedv2equalizerpresets.cuelibrary">true</value>
+		<value name="-Users-alexanderfortunato-Library-Application Support-Corsair-CUE5-eq_presets-unlimitedv3equalizerpresets.cuelibrary">true</value>
+		<value name="-Users-alexanderfortunato-Library-Application Support-Corsair-CUE5-quicklightingzones-quickLightingZones">true</value>
+		<value name="-Users-alexanderfortunato-Library-Application Support-Corsair-CUE5-sensors-UserProps">true</value>
+	</map>
+	<map name="SwUpdate">
+		<value name="LastCheckDate">2025-07-01</value>
+	</map>
+	<map name="TutorialStates">
+		<value name="KeyboardKeyAssignments">Finished</value>
+		<value name="KeyboardLightings">Finished</value>
+	</map>
+	<map name="Update">
+		<value name="PrevUpdateTime">2025-05-12T20:31:22.658Z</value>
+		<value name="UpdateCount">90</value>
+		<value name="UpdateEndTime">2025-05-12T20:31:22.755Z</value>
+	</map>
+	<value name="defaultProfile">{6cd71b5b-3931-40b3-b349-10604b36d69e}</value>
+</config>
