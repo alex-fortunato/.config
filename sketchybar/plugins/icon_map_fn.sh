@@ -11,12 +11,12 @@ function icon_map() {
   "VMware Fusion")
     icon_result=":vmware_fusion:"
     ;;
-  "Alacritty" | "Hyper" | "iTerm2" | "Terminal" | "kitty" | "终端" | "WezTerm")
+  "Alacritty" | "Hyper" | "iTerm2" | "Terminal" | "终端" | "WezTerm")
     icon_result=":terminal:"
     ;;
-  # "kitty")
-  #   icon_result=":kitty:"
-  #   ;;
+  "kitty")
+    icon_result=":kitty:"
+    ;;
   "Microsoft To Do" | "Things")
     icon_result=":things:"
     ;;
@@ -428,10 +428,7 @@ function icon_map() {
   "Nova")
     icon_result=":nova:"
     ;;
-  "prompt-launcher-chat")
-    icon_result=":messages:"
-    ;;
-  "prompt-launcher-dev")
+  "pl-create" | "pl-dev" | "pl-chat")
     icon_result=":down_arrow:"
     ;;
   "DaVinci Resolve")

@@ -202,7 +202,7 @@ alt-shift-l = ['join-with right', 'mode main']
 if.app-id = 'pl-chat'
 run = 'move-node-to-workspace 6'
 [[on-window-detected]]
-if.app-id = 'prompt-launcher-dev'
+if.app-id = 'pl-dev'
 run = 'move-node-to-workspace 4'
 [[on-window-detected]]
 if.app-id = 'pl-create'

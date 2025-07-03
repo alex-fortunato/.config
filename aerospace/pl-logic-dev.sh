@@ -7,7 +7,7 @@ LAUNCHER="/Users/alexanderfortunato/Development/prompt-launcher/dist/pl-dev.app/
 if pgrep -x "kitty" >/dev/null \
   || pgrep -x "CLion" >/dev/null \
   || pgrep -x "pycharm" >/dev/null \
-  || pgrep -x "prompt-launcher-dev" >/dev/null \
+  || pgrep -x "pl-dev" >/dev/null \
   || pgrep -x "Xcode" >/dev/null \
   || pgrep -x "WebStorm" >/dev/null; then
 # At least one app is running => do nothing
