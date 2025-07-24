@@ -11,7 +11,7 @@
 		<value name="StartOnStartup">true</value>
 	</map>
 	<map name="DataCollectionSettings">
-		<value name="configuration_loaded_date">2025-06-26T23:09:44.181</value>
+		<value name="configuration_loaded_date">2025-07-23T15:34:43.446</value>
 		<value name="dataConsent">true</value>
 		<map name="hwProfilesHashes">
 			<map name="{42edc227-a73a-4d1b-89ff-057b002e3883}">
@@ -23,7 +23,7 @@
 		<value name="inited">true</value>
 		<value name="initialProfilesSent">true</value>
 		<value name="machine_id">5240369a050f242f5df952f3a0d4e40a</value>
-		<value name="needToSendSystemSensorsInfo">false</value>
+		<value name="needToSendSystemSensorsInfo">true</value>
 		<value name="session_ended">false</value>
 	</map>
 	<map name="Devices">
@@ -72,7 +72,7 @@
 		<value name="-Users-alexanderfortunato-Library-Application Support-Corsair-CUE5-sensors-UserProps">true</value>
 	</map>
 	<map name="SwUpdate">
-		<value name="LastCheckDate">2025-07-01</value>
+		<value name="LastCheckDate">2025-07-29</value>
 	</map>
 	<map name="TutorialStates">
 		<value name="KeyboardKeyAssignments">Finished</value>

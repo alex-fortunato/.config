@@ -428,8 +428,8 @@ function icon_map() {
   "Nova")
     icon_result=":nova:"
     ;;
-  "pl-create" | "pl-dev" | "pl-chat")
-    icon_result=":down_arrow:"
+  "pl-create-1" | "pl-create-2" | "pl-dev" | "pl-chat")
+    icon_result=""
     ;;
   "DaVinci Resolve")
     icon_result=":davinciresolve:"
