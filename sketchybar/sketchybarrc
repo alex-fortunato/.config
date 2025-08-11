@@ -174,8 +174,10 @@ sketchybar --default "${default[@]}"
 
 
 # -- Left Side Items --
+
 source $ITEM_DIR/spaces.sh
 source $ITEM_DIR/front_app.sh
+
 
 
 # -- Center Items --
@@ -184,12 +186,15 @@ source $ITEM_DIR/front_app.sh
 # -- Right Side Items --
 
 source $ITEM_DIR/calendar.sh
+
 # source $ITEM_DIR/NordVPN.sh
 
 source $ITEM_DIR/volume.sh
 source $ITEM_DIR/WiFi.sh
+
 source $ITEM_DIR/battery.sh
 source $ITEM_DIR/cpu.sh
+source $ITEM_DIR/metaserver.sh
 
 # sketchybar --add bracket bracket1 "Control Center,WiFi" "NordVPN,Item-0"\
 #            --set         bracket1 background.color=$ITEM_BG_COLOR \
@@ -213,7 +218,7 @@ sketchybar --add bracket calendarbracket "calendar" "cpu" "battery" \
                                        background.corner_radius=11 \
 
 
-sketchybar --add bracket rightbracket1 "volume" "wifi" "NordVPN, Item-0" \
+sketchybar --add bracket rightbracket1 "volume" "wifi" "MetaServer,Item-0" \
            --set         rightbracket1 background.color=0xde414141\
                                        background.border_width=2 \
                                        background.border_color=$BG_BORDER_COLOR \

@@ -115,7 +115,7 @@ outer.right =      16
 # You can uncomment this line to open up terminal with alt + enter shortcut
 # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
 # alt-enter = 'exec-and-forget open -n /System/Applications/Utilities/Terminal.app'
-alt-t = 'layout tiling'
+alt-t = 'layout tiling floating'
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles horizontal vertical'
 alt-comma = 'layout accordion horizontal vertical'
@@ -140,28 +140,43 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-u= ['workspace 1', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-create-1.sh']
-# alt-u = ['workspace 1']
+# alt-u= ['workspace 1', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-create-1.sh']
+alt-u = ['workspace 1']
+alt-1 = ['workspace 1']
 # alt-1 = ['workspace 1', 'exec-and-forget ~/.config/sketchybar/plugins/workspace_update.sh']
 # alt-i = ['workspace 2', 'exec-and-forget']
-alt-i = ['workspace 2', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-create-2.sh']
+# alt-i = ['workspace 2', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-create-2.sh']
+alt-i = ['workspace 2']
+alt-2 = ['workspace 2']
 # alt-2 = ['workspace 2', 'exec-and-forget ~/.config/sketchybar/plugins/workspace_update.sh']
 # alt-o = ['workspace 3', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-web.sh']
 alt-o = ['workspace 3', 'exec-and-forget open -a Firefox.app']
+alt-3 = ['workspace 3', 'exec-and-forget open -a Firefox.app']
+
 # alt-3 = ['workspace 3', 'exec-and-forget ~/.config/sketchybar/plugins/workspace_update.sh']
-alt-p = ['workspace 4', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-dev.sh']
-# alt-p = ['workspace 4']
+# alt-p = ['workspace 4', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-dev.sh']
+alt-p = ['workspace 4']
+alt-4 = ['workspace 4']
 
 alt-leftSquareBracket = 'workspace 5'
-alt-rightSquareBracket = ['workspace 6', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-chat.sh']
+alt-5 = 'workspace 5'
 
-alt-7 = ['workspace 7', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-music.sh']
+# alt-rightSquareBracket = ['workspace 6', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-chat.sh']
+alt-rightSquareBracket = ['workspace 6']
+alt-6 = ['workspace 6']
+
+# alt-7 = ['workspace 7', 'exec-and-forget /users/alexanderfortunato/.config/aerospace/pl-logic-music.sh']
+alt-7 = ['workspace 7']
+
+
+
 
 
 # launch apps
 # alt-m = 'exec-and-forget open -a /System/Applications/Messages.app'
 # # alt-w = 'exec-and-forget open -a WhatsApp.app'
 alt-f = 'exec-and-forget open -a Firefox.app'
+alt-m = 'exec-and-forget open -a metaserver.app'
 # alt-t = 'exec-and-forget open -a kitty.app'
 
 

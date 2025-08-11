@@ -11,7 +11,7 @@
 		<value name="StartOnStartup">true</value>
 	</map>
 	<map name="DataCollectionSettings">
-		<value name="configuration_loaded_date">2025-07-23T15:34:43.446</value>
+		<value name="configuration_loaded_date">2025-08-03T10:19:17.097</value>
 		<value name="dataConsent">true</value>
 		<map name="hwProfilesHashes">
 			<map name="{42edc227-a73a-4d1b-89ff-057b002e3883}">
@@ -72,7 +72,7 @@
 		<value name="-Users-alexanderfortunato-Library-Application Support-Corsair-CUE5-sensors-UserProps">true</value>
 	</map>
 	<map name="SwUpdate">
-		<value name="LastCheckDate">2025-07-29</value>
+		<value name="LastCheckDate">2025-08-12</value>
 	</map>
 	<map name="TutorialStates">
 		<value name="KeyboardKeyAssignments">Finished</value>
