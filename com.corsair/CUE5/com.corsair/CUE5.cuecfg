@@ -11,7 +11,7 @@
 		<value name="StartOnStartup">true</value>
 	</map>
 	<map name="DataCollectionSettings">
-		<value name="configuration_loaded_date">2025-09-13T17:50:32.168</value>
+		<value name="configuration_loaded_date">2025-09-13T21:28:05.599</value>
 		<value name="dataConsent">true</value>
 		<map name="hwProfilesHashes">
 			<map name="{42edc227-a73a-4d1b-89ff-057b002e3883}">
