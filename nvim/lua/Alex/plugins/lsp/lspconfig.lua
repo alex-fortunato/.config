@@ -5,6 +5,7 @@ return {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 		{ "folke/neodev.nvim", opts = {} },
+		"williamboman/mason-lspconfig.nvim",
 	},
 	config = function()
 		-- import lspconfig plugin
@@ -90,7 +91,8 @@ return {
 			severity_sort = true,
 		})
 
-		mason_lspconfig.setup_handlers({
+		mason_lspconfig.setup({
+			handlers = {
 			-- default handler for installed servers
 			function(server_name)
 				lspconfig[server_name].setup({
@@ -217,6 +219,7 @@ return {
 					},
 				})
 			end,
+			}
 		})
 	end,
 }

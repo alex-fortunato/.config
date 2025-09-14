@@ -71,6 +71,7 @@ return {
 				neongreen = "#23F108",
 				grey = "#6A6A6A",
 				white = "#FFFFFF",
+				darkgreen = "#2B6631",
 			}
 
 			-- Tree-sitter specific highlights for C++
@@ -110,7 +111,7 @@ return {
 			vim.api.nvim_set_hl(0, "@namespace.cpp", { fg = colors.purple, italic = true })
 			vim.api.nvim_set_hl(0, "@parameter.cpp", { fg = colors.fg, italic = true })
 
-			vim.api.nvim_set_hl(0, "@comment.cpp", { fg = colors.grey, italic = true })
+			vim.api.nvim_set_hl(0, "@comment.cpp", { fg = colors.darkgreen, italic = true })
 			vim.api.nvim_set_hl(0, "@preprocessor.cpp", { fg = colors.purple })
 			vim.api.nvim_set_hl(0, "@punctuation.bracket.cpp", { fg = colors.fg })
 			vim.api.nvim_set_hl(0, "@punctuation.delimiter.cpp", { fg = colors.fg })

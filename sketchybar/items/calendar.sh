@@ -5,7 +5,6 @@ sketchybar --add item calendar right \
                          icon.color=$PINK\
                          background.border_width=1 \
                          background.border_color=$BG_BORDER_COLOR \
-                         background.height=30 \
                          script="$PLUGIN_DIR/calendar.sh"
 
 

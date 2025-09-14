@@ -53,7 +53,7 @@ for sid in $(aerospace list-workspaces --all); do
                               background.border_width=0.5 \
                               background.color=$ITEM_BG_COLOR\
                               background.corner_radius=10 \
-                              background.height=30 \
+                              background.height=32 \
                               background.padding_left=5 \
                               background.padding_right=5 \
                               background.drawing=off                         \

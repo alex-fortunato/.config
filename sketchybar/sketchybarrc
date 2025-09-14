@@ -17,7 +17,7 @@ ITEM_DIR="$CONFIG_DIR/items"
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
 sketchybar --bar position=top \
-                 height=38 \
+                 height=46\
                  blur_radius=30 \
                  color=0x00000000  \
                  y_offset=3 \
@@ -63,7 +63,7 @@ default=(
   label.padding_right=8
   background.corner_radius=10
   background.color=$ITEM_BG_COLOR
-  background.height=30 
+  background.height=32
   # background.image=/users/alexanderfortunato/.config/sketchybar/images/Background1.png
   # background.drawing=on \
   image_scale=0.5
@@ -194,7 +194,7 @@ source $ITEM_DIR/WiFi.sh
 
 source $ITEM_DIR/battery.sh
 source $ITEM_DIR/cpu.sh
-source $ITEM_DIR/metaserver.sh
+# source $ITEM_DIR/metaserver.sh
 
 # sketchybar --add bracket bracket1 "Control Center,WiFi" "NordVPN,Item-0"\
 #            --set         bracket1 background.color=$ITEM_BG_COLOR \
@@ -205,7 +205,7 @@ sketchybar --add bracket spacesbracket "front_app" "space.1" "space.2" "space.3"
            --set         spacesbracket background.color=0xde414141 \
                                        background.border_width=2 \
                                        background.border_color=$BG_BORDER_COLOR \
-                                       background.height=36 \
+                                       background.height=42\
                                        background.corner_radius=11 
                                        # background.image=/users/alexanderfortunato/.config/sketchybar/images/Background1.png \
                                        # background.image.scale=1.0
@@ -214,7 +214,7 @@ sketchybar --add bracket calendarbracket "calendar" "cpu" "battery" \
            --set         calendarbracket background.color=0xff414141\
                                        background.border_width=2 \
                                        background.border_color=$BG_BORDER_COLOR \
-                                       background.height=36 \
+                                       background.height=42\
                                        background.corner_radius=11 \
 
 
@@ -222,7 +222,7 @@ sketchybar --add bracket rightbracket1 "volume" "wifi" "MetaServer,Item-0" \
            --set         rightbracket1 background.color=0xde414141\
                                        background.border_width=2 \
                                        background.border_color=$BG_BORDER_COLOR \
-                                       background.height=36 \
+                                       background.height=42 \
                                        background.corner_radius=11 \
 
 

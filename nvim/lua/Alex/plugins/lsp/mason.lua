@@ -49,6 +49,7 @@ return {
 				-- "ruff",
 				-- "pylint",
 				"eslint_d",
+				"clang-format", -- C/C++ formatter
 			},
 		})
 	end,
