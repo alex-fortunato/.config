@@ -105,14 +105,14 @@ return {
 			vim.api.nvim_set_hl(0, "@constructor.cpp", { fg = colors.oc_type_reference })
 
 			vim.api.nvim_set_hl(0, "@keyword.cpp", { fg = colors.oc_keyword, bold = true })
-			vim.api.nvim_set_hl(0, "keyword.import.cpp", { fg = colors.oc_keyword })
+			vim.api.nvim_set_hl(0, "@keyword.import.cpp", { fg = colors.oc_keyword })
 			vim.api.nvim_set_hl(0, "@keyword.function.cpp", { fg = colors.oc_keyword })
 			vim.api.nvim_set_hl(0, "@keyword.operator.cpp", { fg = colors.oc_keyword })
 			vim.api.nvim_set_hl(0, "@keyword.return.cpp", { fg = colors.oc_keyword, bold = true })
 			vim.api.nvim_set_hl(0, "@keyword.type.cpp", { fg = colors.oc_keyword })
 
 			vim.api.nvim_set_hl(0, "@type.cpp", { fg = colors.oc_type_name })
-			vim.api.nvim_set_hl(0, "@type.builtin.cpp", { fg = colors.oc_type_reference, italic = true })
+			vim.api.nvim_set_hl(0, "@type.builtin.cpp", { fg = colors.oc_keyword, italic = true })
 			vim.api.nvim_set_hl(0, "@include.cpp", { fg = colors.oc_directive })
 			vim.api.nvim_set_hl(0, "@include.identifier.cpp", { fg = colors.oc_header_path })
 
@@ -145,7 +145,8 @@ return {
 			vim.api.nvim_set_hl(0, "@lsp.type.class", { fg = colors.oc_type_name })
 			vim.api.nvim_set_hl(0, "@lsp.type.struct", { fg = colors.oc_type_name })
 			vim.api.nvim_set_hl(0, "@lsp.type.enum", { fg = colors.oc_type_name })
-			vim.api.nvim_set_hl(0, "@lsp.type.type", { fg = colors.oc_type_reference })
+			vim.api.nvim_set_hl(0, "@lsp.type.type", { fg = colors.oc_keyword })
+			vim.api.nvim_set_hl(0, "@lsp.type.keyword", { fg = colors.oc_keyword, italic = true })
 			vim.api.nvim_set_hl(0, "@lsp.type.typeParameter", { fg = colors.oc_type_reference })
 
 			-- STL specifics

@@ -32,3 +32,17 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 -- split windows
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
+
+-- Disable automatic comment continuation on new lines
+-- Remove 'r' (continue comments with Enter) and 'o' (with o/O)
+opt.formatoptions:remove({ "r", "o" })
+
+-- Ensure filetype plugins can't re-add comment continuation
+local no_comment_cont = vim.api.nvim_create_augroup("NoCommentContinuation", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+  group = no_comment_cont,
+  pattern = "*",
+  callback = function()
+    vim.opt_local.formatoptions:remove({ "r", "o" })
+  end,
+})

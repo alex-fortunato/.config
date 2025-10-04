@@ -10,7 +10,6 @@ return {
 	config = function()
 		-- import lspconfig plugin
 		local lspconfig = require("lspconfig")
-		local util = require("lspconfig.util")
 
 		-- import mason_lspconfig plugin
 		local mason_lspconfig = require("mason-lspconfig")
@@ -23,15 +22,6 @@ return {
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 			callback = function(ev)
-				-- If Pyright ever attaches to Python buffers, stop it (we use Jedi)
-				local buf = ev.buf
-				if vim.bo[buf].filetype == "python" then
-					for _, client in ipairs(vim.lsp.get_clients({ bufnr = buf })) do
-						if client.name == "pyright" then
-							client.stop()
-						end
-					end
-				end
 				-- Buffer local mappings.
 				-- See `:help vim.lsp.*` for documentation on any of the below functions
 				local opts = { buffer = ev.buf, silent = true }
@@ -103,26 +93,6 @@ return {
 
 		mason_lspconfig.setup({
 			handlers = {
-
-			["jedi_language_server"] = function()
-				-- configure Jedi for Python (completions, hover, etc.)
-				lspconfig["jedi_language_server"].setup({
-					capabilities = capabilities,
-					root_dir = function(fname) return (util.root_pattern(".git", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt")(fname)) or util.path.dirname(fname) end,
-				})
-			end,
-
-			["ruff"] = function()
-				-- configure Ruff LSP for Python linting/fixes
-				lspconfig["ruff"].setup({
-					capabilities = capabilities,
-					init_options = {
-						settings = {
-							args = {},
-						},
-					},
-				})
-			end,
 			-- default handler for installed servers
 			function(server_name)
 				lspconfig[server_name].setup({
@@ -175,8 +145,63 @@ return {
 					},
 				})
 			end,
-						["pyright"] = function()
-				-- Disabled: using Jedi for Python in-editor (Pyright kept for tools/CI)
+			["pyright"] = function()
+				-- local lspconfig = require("lspconfig")
+				local util = require("lspconfig.util")
+
+				-- picks a python interpreter from (in order):
+				--  1) $VIRTUAL_ENV, 2) ./venv/bin/python 3) ./.venv/bin/python
+				--  4) system python3, 5) system python
+				local function get_python_path(root_dir)
+					-- 1) if the user already activated a venv, use that
+					if vim.env.VIRTUAL_ENV then
+						return vim.env.VIRTUAL_ENV .. "/bin/python"
+					end
+
+					-- 2 & 3) look for local venvs
+					local candidates = { "venv", ".venv" }
+					for _, name in ipairs(candidates) do
+						local python = util.path.join(root_dir, name, "bin", "python")
+						if vim.fn.executable(python) == 1 then
+							return python
+						end
+					end
+
+					-- 4 & 5) fallback to system
+					if vim.fn.exepath("python3") ~= "" then
+						return vim.fn.exepath("python3")
+					end
+					return vim.fn.exepath("python")
+				end
+
+				lspconfig.pyright.setup({
+					-- make sure we find the project root (git, pyproject.toml, etc)
+					root_dir = util.root_pattern(".git", "pyproject.toml", "setup.py"),
+
+					capabilities = capabilities,
+					settings = {
+						python = {
+							analysis = {
+								autoSearchPaths = true,
+								useLibraryCodeForTypes = true,
+								diagnosticMode = "workspace",
+							},
+							-- initial stub; on_init will overwrite it
+							pythonPath = get_python_path(vim.fn.getcwd()),
+						},
+					},
+
+					-- once the server is starting, give it the right pythonPath
+					on_init = function(client, _)
+						local path = get_python_path(client.config.root_dir)
+						client.config.settings.python.pythonPath = path
+
+						-- tell Pyright to re-read its settings
+						client.notify("workspace/didChangeConfiguration", { settings = client.config.settings })
+
+						vim.notify("Pyright using Python: " .. path)
+					end,
+				})
 			end,
 			["lua_ls"] = function()
 				-- configure lua server (with special settings)

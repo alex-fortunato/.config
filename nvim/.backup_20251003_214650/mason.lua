@@ -35,11 +35,8 @@ return {
 				"graphql",
 				"emmet_ls",
 				"prismals",
+				"pyright",
 				"clangd",
-				-- Python: use Jedi LS for in-editor features
-				"jedi_language_server",
-				-- Python linting via Ruff LSP
-				"ruff",
 			},
 		})
 
@@ -49,7 +46,7 @@ return {
 				"stylua", -- lua formatter
 				"isort", -- python formatter
 				-- "black", -- python formatter
-				"ruff", -- python linter/fixer used by Ruff LSP
+				-- "ruff",
 				-- "pylint",
 				"eslint_d",
 				"clang-format", -- C/C++ formatter
