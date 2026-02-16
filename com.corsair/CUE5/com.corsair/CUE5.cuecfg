@@ -8,23 +8,23 @@
 	</map>
 	<map name="CommonSettings">
 		<value name="DemoDeviceModeEnabled">false</value>
-		<value name="StartOnStartup">true</value>
+		<value name="StartOnStartup">false</value>
 	</map>
 	<map name="DataCollectionSettings">
-		<value name="configuration_loaded_date">2025-10-01T23:27:54.399</value>
+		<value name="configuration_loaded_date">2025-10-05T13:57:16.995</value>
 		<value name="dataConsent">true</value>
 		<map name="hwProfilesHashes">
 			<map name="{42edc227-a73a-4d1b-89ff-057b002e3883}">
 				<value name="{fe7a6f02-7c4e-4a90-bd56-a53b826af8a6}">9461082eecf54ec32245fcda2e567506</value>
 			</map>
 		</map>
-		<value name="iCueSettingsEventHash">983ac624227206247cd462d795e14d02</value>
+		<value name="iCueSettingsEventHash">33121739772f8cfc7761e35f150cf908</value>
 		<value name="iCueSettingsEventSent">false</value>
 		<value name="inited">true</value>
 		<value name="initialProfilesSent">true</value>
 		<value name="machine_id">5240369a050f242f5df952f3a0d4e40a</value>
 		<value name="needToSendSystemSensorsInfo">true</value>
-		<value name="session_ended">false</value>
+		<value name="session_ended">true</value>
 	</map>
 	<map name="Devices">
 		<map name="K55 CORE RGB Gray">

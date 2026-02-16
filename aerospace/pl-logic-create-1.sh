@@ -10,6 +10,7 @@ if pgrep -x "Cubase 14" >/dev/null \
   || pgrep -x "Pro Tools" >/dev/null \
   || pgrep -x "BitwigStudio" >/dev/null \
   || pgrep -x "resolve" >/dev/null \
+  || pgrep -x "Max" >/dev/null \
   || pgrep -x "Sibelius" >/dev/null; then
 # At least one app is running => do nothing
   exit -

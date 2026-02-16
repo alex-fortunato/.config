@@ -42,7 +42,7 @@ for sid in $(aerospace list-workspaces --all); do
         --set "space.$sid" \
         icon="$sid"\
         label="$icon_strip" \
-                              icon.font="Jetbrains Mono:Regular:16.0"  \
+                              icon.font="Jetbrains Mono:Regular:14.0"  \
                               icon.padding_left=5                         \
                               icon.padding_right=5                         \
                               icon.color=$RED2 \
@@ -53,11 +53,11 @@ for sid in $(aerospace list-workspaces --all); do
                               background.border_width=0.5 \
                               background.color=$ITEM_BG_COLOR\
                               background.corner_radius=10 \
-                              background.height=32 \
+                              background.height=24 \
                               background.padding_left=5 \
                               background.padding_right=5 \
                               background.drawing=off                         \
-                              label.font="sketchybar-app-font:Regular:18:0" \
+                              label.font="sketchybar-app-font:Regular:14:0" \
                               label.background.height=30                    \
                               label.background.corner_radius=5              \
                               label.background.border_width=1 \

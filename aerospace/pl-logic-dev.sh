@@ -10,6 +10,7 @@ if pgrep -x "kitty" >/dev/null \
   || pgrep -x "pl-dev" >/dev/null \
   || pgrep -x "Xcode" >/dev/null \
   || pgrep -x "TouchDesigner" >/dev/null \
+  || pgrep -x "RustRover" >/dev/null \
   || pgrep -x "WebStorm" >/dev/null; then
 # At least one app is running => do nothing
   exit -
