@@ -35,12 +35,24 @@ for sid in $(aerospace list-workspaces --all); do
         done <<<"${apps}"
     else
         icon_strip=""
-    fi 
+    fi
+
+    # Map workspace IDs to display names
+    display_name="$sid"
+    case "$sid" in
+        5) display_name="U" ;;
+        6) display_name="I" ;;
+        7) display_name="O" ;;
+        8) display_name="P" ;;
+        9) display_name="E" ;;
+        10) display_name="M" ;;
+        11) display_name="N" ;;
+    esac
 
     sketchybar --add item "space.$sid" center \
         --subscribe "space.$sid" aerospace_workspace_change \
         --set "space.$sid" \
-        icon="$sid"\
+        icon="$display_name"\
         label="$icon_strip" \
                               icon.font="Jetbrains Mono:Regular:14.0"  \
                               icon.padding_left=5                         \
