@@ -40,10 +40,10 @@ for sid in $(aerospace list-workspaces --all); do
     # Map workspace IDs to display names
     display_name="$sid"
     case "$sid" in
-        5) display_name="U" ;;
-        6) display_name="I" ;;
-        7) display_name="O" ;;
-        8) display_name="P" ;;
+        5) display_name="Q" ;;
+        6) display_name="W" ;;
+        7) display_name="E" ;;
+        8) display_name="R" ;;
         9) display_name="E" ;;
         10) display_name="M" ;;
         11) display_name="N" ;;

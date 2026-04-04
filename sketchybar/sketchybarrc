@@ -208,9 +208,25 @@ sketchybar --add bracket spacesbracket "front_app" "space.1" "space.2" "space.3"
                                        background.border_width=2 \
                                        background.border_color=$BG_BORDER_COLOR \
                                        background.height=24\
-                                       background.corner_radius=11 
+                                       background.corner_radius=11
                                        # background.image=/users/alexanderfortunato/.config/sketchybar/images/Background1.png \
                                        # background.image.scale=1.0
+
+# Music production workspaces (1-4) grouping indicator
+sketchybar --add bracket musicbracket "space.1" "space.2" "space.3" "space.4" \
+           --set         musicbracket background.color=0x330060ff \
+                                      background.border_width=1 \
+                                      background.border_color=0xaa0060ff \
+                                      background.height=28 \
+                                      background.corner_radius=11
+
+# U/I/O/P workspaces (5-8) grouping indicator
+sketchybar --add bracket uiopbracket "space.5" "space.6" "space.7" "space.8" \
+           --set         uiopbracket background.color=0x3300aa00 \
+                                     background.border_width=1 \
+                                     background.border_color=0xaa00aa00 \
+                                     background.height=28 \
+                                     background.corner_radius=11
 
 sketchybar --add bracket calendarbracket "calendar" "cpu" "ram" "battery" \
            --set         calendarbracket background.color=0xff414141\

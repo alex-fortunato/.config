@@ -7,7 +7,7 @@ if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
     sketchybar --set $NAME background.drawing=on \
                            background.color=0xff000000 \
                            icon.color=0xffff10f0\
-                           background.border_color=0xff9d9d9d \
+                           background.border_color=0xffff00ff \
                            background.border_width=1 \
                            label.color=0xffffffff \
                            # label.background.color=0xb34d4d4d
@@ -16,7 +16,7 @@ if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
                   
 else
     sketchybar --set $NAME background.drawing=on \
-                          background.color=0x8a000000\
+                          background.color=0xff000000\
                           background.border_color=0xd6585858 \
                           background.border_width=1 \
                           icon.color=0xffffffff \
