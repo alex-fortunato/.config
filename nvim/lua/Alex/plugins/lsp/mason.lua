@@ -36,6 +36,7 @@ return {
 				"emmet_ls",
 				"prismals",
 				"clangd",
+				"rust_analyzer",
 				-- Python: use Jedi LS for in-editor features
 				"jedi_language_server",
 				-- Python linting via Ruff LSP

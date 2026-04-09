@@ -22,6 +22,7 @@ return {
         python = { "isort", "black" },
         cpp = { "clang-format" },
         c = { "clang-format" },
+        rust = { "rustfmt" },
       },
       format_on_save = {
         lsp_fallback = true,
