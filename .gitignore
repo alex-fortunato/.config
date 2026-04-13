@@ -1,3 +1,7 @@
 .DS_Store
 github-copilot/
 
+# audio-waveform.yazi binaries and build artifacts
+yazi/plugins/audio-waveform.yazi/bin/waveform
+yazi/plugins/audio-waveform.yazi/target/
+

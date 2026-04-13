@@ -4,23 +4,12 @@ echo "called with $1"
 echo "$FOCUSED_WORKSPACE"
 
 if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
-    sketchybar --set $NAME background.drawing=on \
-                           background.color=0xff000000 \
-                           icon.color=0xffff10f0\
-                           background.border_color=0xffff00ff \
-                           background.border_width=1 \
-                           label.color=0xffffffff \
-                           # label.background.color=0xb34d4d4d
-    #                       # dark blue is 0xff37667f
-                    
-                  
+    sketchybar --set $NAME background.drawing=off \
+                           icon.color=0xffff10f0 \
+                           label.color=0xffffffff
 else
-    sketchybar --set $NAME background.drawing=on \
-                          background.color=0xff000000\
-                          background.border_color=0xd6585858 \
-                          background.border_width=1 \
-                          icon.color=0xffffffff \
-                          label.color=0xff535353 \
-                          # label.background.color=0xb31d1d1d
+    sketchybar --set $NAME background.drawing=off \
+                           icon.color=0xffffffff \
+                           label.color=0xff535353
 fi
 

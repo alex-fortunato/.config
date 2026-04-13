@@ -14,9 +14,9 @@ sketchybar --add item wifi left \
                         icon.padding_right=4 \
                         label.padding_left=4 \
                         label.padding_right=6 \
-                        background.border_width=1 \
-                        label.font.size=12.0 \
-                        background.border_color=$BG_BORDER_COLOR
+                        background.border_width=0 \
+                        background.color=0x00000000 \
+                        label.font.size=12.0
   
                                        
 

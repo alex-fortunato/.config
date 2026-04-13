@@ -18,13 +18,13 @@ ITEM_DIR="$CONFIG_DIR/items"
 
 sketchybar --bar position=top \
                  height=24\
-                 blur_radius=30 \
-                 color=0x00000000  \
+                 blur_radius=0 \
+                 color=0xff000000  \
                  y_offset=0\
                  margin=0 \
                  background.drawing=off\
                  image.drawing=off \
-                 corner_radius=10 \
+                 corner_radius=0 \
                  # border_color=$BG_BORDER_COLOR \
                  # border_width=1 \
                  # corner_radius=10
@@ -62,7 +62,8 @@ default=(
   label.padding_left=8
   label.padding_right=8
   background.corner_radius=10
-  background.color=$ITEM_BG_COLOR
+  background.color=0x00000000
+  background.border_width=0
   background.height=24
   # background.image=/users/alexanderfortunato/.config/sketchybar/images/Background1.png
   # background.drawing=on \
@@ -203,45 +204,6 @@ source $ITEM_DIR/ram.sh
 #                                   background.border_width=2 \
 #                                   backgound.border_color=$BG_BORDER_COLOR 
 
-sketchybar --add bracket spacesbracket "front_app" "space.1" "space.2" "space.3" "space.4" "space.5" "space.6" \
-           --set         spacesbracket background.color=0xde414141 \
-                                       background.border_width=2 \
-                                       background.border_color=$BG_BORDER_COLOR \
-                                       background.height=24\
-                                       background.corner_radius=11
-                                       # background.image=/users/alexanderfortunato/.config/sketchybar/images/Background1.png \
-                                       # background.image.scale=1.0
-
-# Music production workspaces (1-4) grouping indicator
-sketchybar --add bracket musicbracket "space.1" "space.2" "space.3" "space.4" \
-           --set         musicbracket background.color=0x330060ff \
-                                      background.border_width=1 \
-                                      background.border_color=0xaa0060ff \
-                                      background.height=28 \
-                                      background.corner_radius=11
-
-# U/I/O/P workspaces (5-8) grouping indicator
-sketchybar --add bracket uiopbracket "space.5" "space.6" "space.7" "space.8" \
-           --set         uiopbracket background.color=0x3300aa00 \
-                                     background.border_width=1 \
-                                     background.border_color=0xaa00aa00 \
-                                     background.height=28 \
-                                     background.corner_radius=11
-
-sketchybar --add bracket calendarbracket "calendar" "cpu" "ram" "battery" \
-           --set         calendarbracket background.color=0xff414141\
-                                       background.border_width=2 \
-                                       background.border_color=$BG_BORDER_COLOR \
-                                       background.height=24\
-                                       background.corner_radius=11 \
-
-
-sketchybar --add bracket rightbracket1 "volume" "wifi" "MetaServer,Item-0" \
-           --set         rightbracket1 background.color=0xde414141\
-                                       background.border_width=2 \
-                                       background.border_color=$BG_BORDER_COLOR \
-                                       background.height=24 \
-                                       background.corner_radius=11 \
 
 
 

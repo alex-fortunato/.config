@@ -149,7 +149,7 @@ return {
 				lspconfig["clangd"].setup({
 					capabilities = capabilities,
 					filetypes = { "c", "cpp", "h", "hpp" },
-					cmd = { "clangd", "--compile-commands-dir=build" },
+					root_dir = util.root_pattern("CMakeLists.txt", ".git"),
 				})
 			end,
 			["graphql"] = function()
